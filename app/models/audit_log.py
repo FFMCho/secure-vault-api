@@ -1,7 +1,7 @@
 """AuditLog-Modell – Protokoll sicherheitsrelevanter Aktionen."""
 
 from datetime import datetime
-from uuid import uuid4
+from uuid import UUID, uuid4
 
 from sqlalchemy import DateTime, ForeignKey, String, Text, func
 from sqlalchemy.dialects.postgresql import UUID

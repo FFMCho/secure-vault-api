@@ -2,6 +2,6 @@
 
 from app.models.audit_log import AuditLog
 from app.models.file import File
-from app.models.user import User
+from app.models.user import User, UserRole
 
-__all__ = ["User", "File", "AuditLog"]
+__all__ = ["User", "UserRole", "File", "AuditLog"]

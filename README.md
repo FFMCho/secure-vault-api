@@ -69,7 +69,20 @@ app/
 └── services/     # Business-Logik
 ```
 
+## API-Endpunkte (Phase 2)
+
+| Methode | Endpunkt | Auth | Beschreibung |
+|---------|----------|------|--------------|
+| GET | `/health` | - | Healthcheck inkl. DB |
+| GET | `/api/v1/health` | - | Wie oben |
+| POST | `/api/v1/auth/register` | - | Registrierung |
+| POST | `/api/v1/auth/login` | - | Login (JWT) |
+| GET | `/api/v1/users/me` | Bearer | Aktueller User |
+
+**Authentifizierung:** `Authorization: Bearer <token>`
+
 ## Status
 - Phase 0: Projekt-Setup ✅
 - Phase 1: DB, Models, Migrationen, API-Grundgerüst ✅
-- Phase 2–5: Noch offen
+- Phase 2: Auth (Register, Login, JWT, /users/me) ✅
+- Phase 3–5: Noch offen
